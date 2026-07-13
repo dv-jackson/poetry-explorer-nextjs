@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  display: block;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--theme-on-primary);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-on-primary);
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('@/public/fonts/GlacialIndifference.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'North Carossela';
+  src: url('@/public/fonts/NorthCarossela.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('@/public/fonts/PlayfairDisplay.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Medhurst';
+  src: url('@/public/fonts/Medhurst.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gallient';
+  src: url('@/public/fonts/Gallient.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('@/public/fonts/Lora.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --theme-primary: #4c0519;
+  --theme-on-primary: #fdf2f8;
+  --theme-secondary: #fffbeb;
+  --theme-on-secondary: #27272a;
+  --theme-accent: #be123c;
+  --theme-on-accent: #ffffff;
+
+  --theme-font-header: 'North Carossela', serif;
+  --theme-font-body: 'Glacial Indifference', sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--theme-primary);
+  --color-on-primary: var(--theme-on-primary);
+
+  --color-secondary: var(--theme-secondary);
+  --color-on-secondary: var(--theme-on-secondary);
+
+  --color-accent: var(--theme-accent);
+  --color-on-accent: var(--theme-on-accent);
+
+  --font-header: var(--theme-font-header);
+  --font-body: var(--theme-font-body);
+}
+
+body {
+  background-color: var(--theme-secondary);
+  color: var(--theme-on-secondary);
+  font-family: var(--theme-font-body), Inter, serif;
+}
+
+*, *::before, *::after {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
