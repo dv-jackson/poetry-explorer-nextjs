@@ -22,3 +22,6 @@ FEATURES:
 - Dynamic Theme switching (3 themes that change colors, fonts, and images)
 - Favorites page
 - History Page
+
+VIEW APPLICATION:
+https://poetry-explorer-nextjs.vercel.app/
